@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.addtastkform {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.list-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-list li {
+    font-size: 18px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.list-list li a {
+    /* Anchor tag styles */
+    text-decoration: none;
+    color: #333; /* Link color */
+    display: block; /* Makes the entire list item clickable */
+    padding: 8px 12px; /* Padding for clickable area */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.list-list li a:hover {
+    /* Hover styles for anchor tags */
+    background-color: #f9f9f9; /* Background color on hover */
+}
+
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.task-name {
+    flex-grow: 1;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.restore-btn {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: auto 10px;
+}
+
+.archived {
+    order: 1; /* Display archived tasks at the bottom */
+}
+
+.archived-task {
+    text-decoration: line-through; /* Apply strikethrough style for archived tasks */
+    color: #888; /* Change text color for archived tasks */
+}
+
+ul.task-list li:hover {
+    background-color: #f9f9f9;
+}
+
+
+@media screen and (max-width: 600px) {
+    input[type="text"] {
+        width: 65%;
+        max-width: none;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+
+.back-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+
+.list-name {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+    margin: auto 10px;
+}
+
+.list-name:hover {
+    background-color: #e0e0e0;
+}
