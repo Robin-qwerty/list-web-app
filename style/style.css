@@ -176,3 +176,56 @@ ul.task-list li:hover {
 .list-name:hover {
     background-color: #e0e0e0;
 }
+
+.background {
+    background: radial-gradient(circle at center, #27ae60, #202221);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.list-group-password,
+.new-list-group {
+    margin-bottom: 20px;
+}
+
+.center-container input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.center-container button {
+    padding: 10px 20px;
+    background-color: #27ae60; /* Green theme */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.center-container button:hover {
+    background-color: #219d54; /* Darker green on hover */
+}
+
+.center-container hr {
+    margin: 0 -40px;
+}
+
+.input-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
